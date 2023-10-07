@@ -7,12 +7,16 @@ header{
     text-align: center;
     font-size: 20px;
     background-color: #848383;
+    width: 99vw;
+    border-style: double;
 }
 aside{
     width: 10vw;
-    border: 1px solid red;
     background-color: #848383;
     padding-top: 20px;
+    border-style: double;
+    margin-left: 0px;
+    border: 2px solid;
 }
 
 aside>button{
@@ -20,10 +24,12 @@ aside>button{
 }
 
 nav{
-    width: 100%;
+    width: 98.38vw;
     height: 21px;
-    background-color: #ccc;
-    border: 2px solid blue;
+    background-color:  #848383;
+    padding: 5px;
+    margin-top: 2px;
+    border-style: double;
 }
 
 ul{
@@ -49,8 +55,16 @@ aside>button{
 
 section{
     width: 90vw;
-    border: 1px solid blue;
+    border: 0px solid blue;
 }
 table{
-    border:  2px solid green;
+    border-style: double;
+}
+
+button{
+    border-radius: 5px;
+}
+
+#cad-title{
+    font-weight: bold;
 }
