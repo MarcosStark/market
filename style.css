@@ -1,10 +1,14 @@
+body{
+    background-color: #666;
+}
+
 header{
     text-align: center;
     font-size: 20px;
     background-color: #666;
 }
 aside{
-    width: 10%;
+    width: 40%;
     border: 1px solid red;
     background-color: #ccc;
     padding-top: 20px;
@@ -35,7 +39,6 @@ aside>button{
 }
 
 section{
-    width: 30%;
     border: 1px solid blue;
-    margin-left: 12%;
+    position:static;
 }
