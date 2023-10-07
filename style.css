@@ -30,6 +30,7 @@ nav{
     padding: 5px;
     margin-top: 2px;
     border-style: double;
+    font-size: 12px;
 }
 
 ul{
@@ -43,7 +44,7 @@ li{
 
 li>button{
     margin:0px 100px 0px 100px;
-    padding:0px 100px 0px 100px;
+    padding:0px 70px 0px 70px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -56,6 +57,7 @@ aside>button{
 section{
     width: 90vw;
     border: 0px solid blue;
+    display: none;
 }
 table{
     border-style: double;
@@ -67,4 +69,5 @@ button{
 
 #cad-title{
     font-weight: bold;
+    font-size: 15px;
 }
