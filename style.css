@@ -95,6 +95,10 @@ button{
     visibility: hidden;
 }
 
+#product-reg{
+    visibility: hidden;
+}
+
 h4{
     text-align: center;
 }
