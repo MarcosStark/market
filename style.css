@@ -13,9 +13,9 @@ header{
 aside{
     width: 10vw;
     background-color: #848383;
-    padding-top: 20px;
     border-style: double;
     border: 2px solid;
+    margin-bottom: 350px;
 }
 
 aside>button{
@@ -55,14 +55,12 @@ aside>button{
 
 section{
     width: 90vw;
-    border: 1px solid blue;
     margin-left: 5px;
-    visibility: hidden;
+    visibility: visible;
 
 }
 table{
     width: 100vw;
-    border-style: double;
 }
 
 button{
@@ -72,4 +70,15 @@ button{
 #cad-title{
     font-weight: bold;
     font-size: 15px;
+} 
+
+#text-body{
+    background-image: url("http://www.bbcautomacao.com.br/site/wp-content/uploads/2012/12/boacompra-798x401.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 500px;
+    width: 1000px;
+    border: 1px solid yellow;
+    border-radius: 15px;
+    margin: 30px 0px 0px 150px;
 }
