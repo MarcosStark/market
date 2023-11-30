@@ -73,9 +73,9 @@ button{
 } 
 
 #text-body{
-    background-image: url("http://www.bbcautomacao.com.br/site/wp-content/uploads/2012/12/boacompra-798x401.jpg");
+    /*background-image: url("http://www.bbcautomacao.com.br/site/wp-content/uploads/2012/12/boacompra-798x401.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100%;*/
     height: 500px;
     width: 900px;
     border-radius: 15px;
@@ -91,13 +91,13 @@ button{
     padding: 0px 0px 5px 5px;
 }
 
-#client-reg{
+/*#client-reg{
     visibility: hidden;
 }
 
 #product-reg{
     visibility: hidden;
-}
+}*/
 
 h4{
     text-align: center;

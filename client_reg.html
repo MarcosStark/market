@@ -17,8 +17,8 @@
         <nav>
             <ul>
                 <li id="cad-title"> CADASTRAR</li>
-                <li><button id="clientReg-btn">CLIENTE</button></li>
-                <li><button id="productReg-btn" onclick="teste()">PRODUTO</button></li>
+                <li><button id="clientReg-btn" onload="teste()">CLIENTE</button></li>
+                <li><button id="productReg-btn">PRODUTO</button></li>
                 <li><button>OFERTA</button></li>
             </ul>
         </nav>
@@ -35,6 +35,21 @@
                 </th>
                 <th>
                     <section id="text-body">
+                        <div id="client-reg" class="register">
+                            <h4>Cadastro de cliente</h4>
+                            <label>Nome</label><br>
+                            <input type="text" placeholder="Digite o nome..."><br>
+                            <label>CPF</label><br>
+                            <input type="text" placeholder="Digite o cpf..."><br>
+                            <label>Telefone</label><br>
+                            <input type="text" placeholder="Digite o telefone..."><br>
+                            <label>Email</label><br>
+                            <input type="email" placeholder="Digite o email..."><br>
+                            <label>Idade</label><br>
+                            <input type="number" placeholder="Digite a idade..."><br><br>
+
+                            <button type="button">Cadastrar</button>
+                        </div>
                     </section>
                 </th>
               </tr>
