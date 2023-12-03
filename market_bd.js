@@ -22,7 +22,8 @@ $(document).ready( function(){
 
             success: function(data){
                 text_body.style.backgroundImage = "url('')";
-                $('#consult-clients').html(data);            }
+                $('#text-body').html(data);            
+            }
         });
     });
 });

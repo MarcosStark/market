@@ -18,7 +18,7 @@ $(document).ready( function(){
     
     $('#productReg-btn').click(function(){
         $.ajax({
-            url: 'product_reg.html',
+            url: 'product_reg.php',
 
             success: function(data){
                 text_body.style.backgroundImage = "url('')";
