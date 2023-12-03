@@ -4,7 +4,7 @@ $(document).ready( function(){
     
     $('#clientReg-btn').click(function(){
         $.ajax({
-            url: 'client_reg.html',
+            url: 'client_reg.php',
 
             success: function(data){
                 text_body.style.backgroundImage = "url('')";
