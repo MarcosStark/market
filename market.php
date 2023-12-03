@@ -34,10 +34,7 @@
                     </aside>
                 </th>
                 <th>
-                    <section id="text-body">
-                        <div id="consult-clients" class="list-group"></div>  
-                    </section>
-                    
+                        <table id="text-body" class="list-group"></table>           
                 </th>
               </tr>
         </table>

@@ -9,7 +9,7 @@
     </head>
 
     <body>
-        <form id="client-reg" class="register">
+        <div id="client-reg" class="register">
             <h4>Cadastro de cliente</h4>
             <label>Nome</label><br>
             <input type="text" name="name" placeholder="Digite o nome..."><br>
@@ -23,7 +23,7 @@
             <input type="number" name="age" placeholder="Digite a idade..."><br><br>
 
             <button type="button" id="client_reg_btn">Cadastrar</button>
-        </form>
+        </div>
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="market_bd.js"></script> 
