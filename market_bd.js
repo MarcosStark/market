@@ -27,3 +27,18 @@ $(document).ready( function(){
         });
     });
 });
+
+/*$(document).ready( function(){
+    
+    $('.deleteClient-btn').click( function(){
+        $.ajax({
+            url: 'deleteClient_bd.php',
+            method: 'post',
+            data: $('#teste').serialize(),
+
+            success: function(data){
+                alert(data);
+            }
+        });
+    });
+});*/
