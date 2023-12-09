@@ -1,5 +1,4 @@
 <?php
-    //session_start();
 
     require_once('db_connection.php');
 
@@ -23,9 +22,7 @@
         echo "</tr>";
         
         while($rows = mysqli_fetch_array($result)){
-        
-            echo "<tr id='teste'>";
-            //$_SESSION['id'] = $rows['id'];
+            echo "<tr>";
                 echo "<a href='#' class='list-group-itemtext-align: center;'>";
                 echo "<td style='border: 3px solid black; border-style: inset; padding: 3px;text-align: center;'>".$rows['id']."</td>";
                 echo "<td style='border: 3px solid black; border-style: inset; padding: 3px;text-align: center;'>".$rows['name']."</td>";
@@ -33,11 +30,13 @@
                 echo "<td style='border: 3px solid black; border-style: inset; padding: 3px;text-align: center;'>".$rows['cpf']."</td>";
                 echo "<td style='border: 3px solid black; border-style: inset; padding: 3px;text-align: center;'>".$rows['email']."</td>";
                 echo "<td style='border: 3px solid black; border-style: inset; padding: 3px;text-align: center;'>".$rows['telephone']."</td>";
-                echo "<td style='border: 3px solid black; border-style: inset; padding: 3px;text-align: center;'>".'<button type="button">Editar</button>'."</td>";
-                echo "<td style='border: 3px solid black; border-style: inset; padding: 3px;text-align: center;'>".'<button type="button" class="deleteClient-btn">Apagar</button>'."</td>";
+                //echo "<td style='border: 3px solid black; border-style: inset; padding: 3px;text-align: center;'>".'<button type="button">Editar</button>'."</td>";
+                //echo "<td style='border: 3px solid black; border-style: inset; padding: 3px;text-align: center;'>".'<button type="button">Apagar</button>'."</td>";
+                $ok = $rows['id'];
+                //"<a 'button type='button' class='deleteClient-btn' href='deleteClient_bd.php?id=$rows[id]'>"."Apagar"."</button>"."</a>"."</td>";
+                echo "<td>"."<form id='test'>"."<input type='text' name='opa' value=$ok>"."<button type='button' class='deleteClient-btn'>Apagar2</button>"."</form>"."</td>";
                 echo "</a>";
             echo "</tr>";
-
         }
 
     }
