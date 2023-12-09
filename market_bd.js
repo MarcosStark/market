@@ -7,8 +7,8 @@ $(document).ready( function(){
             data: $('#client-reg').serialize(),
 
             success: function(data){
-               alert(data);
-            }
+               alert(data); 
+            },
         });
     });
 });
@@ -28,17 +28,17 @@ $(document).ready( function(){
     });
 });
 
-/*$(document).ready( function(){
+$(document).ready( function(){
     
     $('.deleteClient-btn').click( function(){
         $.ajax({
             url: 'deleteClient_bd.php',
             method: 'post',
-            data: $('#teste').serialize(),
+            data: $('#test').serialize(),
 
             success: function(data){
                 alert(data);
             }
         });
     });
-});*/
+});
