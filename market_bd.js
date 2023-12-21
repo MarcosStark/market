@@ -26,19 +26,42 @@ $(document).ready( function(){
             }
         });
     });
+            var id = $(this).data('id_client');
 });
 
 $(document).ready( function(){
     
     $('.deleteClient-btn').click( function(){
+        var id = $(this).data('id_client');
+        
         $.ajax({
             url: 'deleteClient_bd.php',
             method: 'post',
-            data: $('#test').serialize(),
+            data: {id_client: id}, 
 
             success: function(data){
-                alert(data);
-            }
+                $.ajax({
+                    url: 'consult_clients.php',
+        
+                    success: function(data){
+                        text_body.style.backgroundImage = "url('')";
+                        $('#text-body').html(data);            
+                    }
+                });
+            },
         });
     });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
