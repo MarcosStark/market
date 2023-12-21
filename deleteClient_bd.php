@@ -2,16 +2,14 @@
 
 	require_once('db_connection.php');
 
-	$opa = $_POST['opa']; 
-
-    echo "<script> alert($opa); </script>";
+	$id = $_GET['id']; 
 
 	$objDb = new db();
 	$link = $objDb->mysql_connection();
 
-	//$sql = "DELETE FROM client WHERE id = $opa";  
+	$sql = "DELETE FROM client WHERE id = $id";  
     
-	//mysqli_query($link, $sql);
+	mysqli_query($link, $sql);
 
 	//header("Location: consult_clients.php");
 
