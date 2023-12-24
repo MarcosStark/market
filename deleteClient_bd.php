@@ -2,7 +2,8 @@
 
 	require_once('db_connection.php');
 
-	$id = $_GET['id']; 
+	$id = $_POST['id_client'];
+	echo "<script>"."alert($id);"."</script>";
 
 	$objDb = new db();
 	$link = $objDb->mysql_connection();

@@ -31,10 +31,8 @@
                 echo "<td style='border: 3px solid black; border-style: inset; padding: 3px; text-align: center;'>".$rows['cpf']."</td>";
                 echo "<td style='border: 3px solid black; border-style: inset; padding: 3px; text-align: center;'>".$rows['email']."</td>";
                 echo "<td style='border: 3px solid black; border-style: inset; padding: 3px; text-align: center;'>".$rows['telephone']."</td>";
-                //echo "<td style='border: 3px solid black; border-style: inset; padding: 3px; text-align: center;'>".'<button type="button">Editar</button>'."</td>";
+                echo "<td style='border: 3px solid black; border-style: inset; padding: 3px; text-align: center;'>"."<button class='editClient-btn' type='button' data-id_client='".$rows['id']."'>"."Editar"."</button>"."</td>";
                 echo "<td style='border: 3px solid black; border-style: inset; padding: 3px; text-align: center;'>"."<button class='deleteClient-btn' type='button' data-id_client='".$rows['id']."'>"."Apagar"."</button>"."</td>";
-                //echo "<td>"."<a 'button type='button' href='deleteClient_bd.php?id=$rows[id]'>"."Apagar"."</button>"."</a>"."</td>";
-               //echo "<td>"."<form id='test'>"."<input type='text' name='opa' value=$rows[id]>"."<button type='button' class='deleteClient-btn'>Apagar2</button>"."</form>"."</td>";
                 echo "</a>";
             echo "</tr>";
         }
