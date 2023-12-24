@@ -28,3 +28,19 @@ $(document).ready( function(){
     });
 });
 
+$(document).ready( function(){
+    
+    $('.editClient-btn').click(function(){
+        $.ajax({
+            url: 'edit2.php',
+
+            success: function(data){
+                text_body.style.backgroundImage = "url('')";
+                $('#text-body').html(data);
+            }
+        })
+    });
+});
+
+
+
