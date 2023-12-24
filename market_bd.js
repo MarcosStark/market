@@ -77,6 +77,44 @@ $(document).ready( function(){
     });
 });
 
+$(document).ready( function(){
+    
+    $('.edit2-btn').click( function(){
+        var id = $(this).data('id_client');
+        
+        $.ajax({
+            url: 'edit_client.php',
+            method: 'post',
+            data: {id_client: id}, 
+
+            success: function(data){
+                $.ajax({
+                    url: 'consult_clients.php',
+        
+                    success: function(data){
+                        text_body.style.backgroundImage = "url('')";
+                        $('#text-body').html(data);            
+                    }
+                });
+            },
+        });
+    });
+});
+
+$(document).ready( function(){
+    
+    $('.edit2-btn').click( function(){
+        $.ajax({
+            url: 'edit_client.php',
+            method: 'post',
+            data: $('#client-edit').serialize(),
+
+            success: function(data){
+               alert(data); 
+            },
+        });
+    });
+});
 
 
 
