@@ -14,6 +14,21 @@ $(document).ready( function(){
 });
 
 $(document).ready( function(){
+    
+    $('.edit2-btn').click( function(){
+        $.ajax({
+            url: 'edit_client.php',
+            method: 'post',
+            data: $('#client-edit').serialize(),
+
+            success: function(data){
+               alert(data); 
+            },
+        });
+    });
+});
+
+$(document).ready( function(){
     text_body = document.getElementById("text-body");
 
     $('#clientBd-btn').click( function(){
@@ -58,12 +73,12 @@ $(document).ready( function(){
     $('.editClient-btn').click( function(){
         var id = $(this).data('id_client');
         
-        /*$.ajax({
-            url: 'edit_client.php',
+        $.ajax({
+            url: 'edit2.php',
             method: 'post',
-            data: {id_client: id}, */
+            data: {id_client: id}, 
 
-            //success: function(data){
+            success: function(data){
                 $.ajax({
                     url: 'edit2.php',
         
@@ -72,8 +87,8 @@ $(document).ready( function(){
                         $('#text-body').html(data);            
                     }
                 });
-           // },
-        //});
+            },
+        });
     });
 });
 
@@ -100,22 +115,6 @@ $(document).ready( function(){
         });
     });
 });
-
-$(document).ready( function(){
-    
-    $('.edit2-btn').click( function(){
-        $.ajax({
-            url: 'edit_client.php',
-            method: 'post',
-            data: $('#client-edit').serialize(),
-
-            success: function(data){
-               alert(data); 
-            },
-        });
-    });
-});
-
 
 
 
